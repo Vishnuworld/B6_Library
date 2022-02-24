@@ -233,3 +233,7 @@ class EmployeeDetail(DetailView):
 
 
 # Ass-9   - 9th Feb 2022 -- 
+
+def student():
+    print("ABC")
+
