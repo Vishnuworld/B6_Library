@@ -39,3 +39,6 @@ class Company(models.Model):
     name = models.CharField(max_length=100, null=True)
 
 
+    class Meta:
+        db_table = "company"
+

@@ -144,12 +144,13 @@ from django.contrib import messages
 
 def form_home(request):  # Funcion Based View
     if request.method == "POST":
-        print(request.POST)
+        print(request.POST, "request method")
         print("in POST request")
         form  = BookForm(request.POST)
         if form.is_valid():
             # print(form.cleaned_data["name"])
             form.save()
+            print(form)
             messages.success(request, 'Data Saved successfully!')  # <-
             messages.info(request, 'Redirecting to home page')
         else:
