@@ -5,3 +5,7 @@ def view_a(request):
 
 def view_b(request):
     return HttpResponse("in view_b")
+
+
+def data():
+    print("XYZ")

@@ -37,5 +37,6 @@ class Employee(models.Model):
 
 class Company(models.Model):
     name = models.CharField(max_length=100, null=True)
-
+    address = models.CharField(max_length=255)
+    
 
