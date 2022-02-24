@@ -35,3 +35,7 @@ class Employee(models.Model):
         return f"{self.first_name}"
 
 
+class Company(models.Model):
+    name = models.CharField(max_length=100, null=True)
+
+
