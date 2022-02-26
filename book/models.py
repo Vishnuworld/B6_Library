@@ -43,3 +43,9 @@ class Company(models.Model):
     class Meta:
         db_table = "company"
 
+
+class ProductVideo(models.Model):
+    video = models.CharField(max_length=100, null=True)
+    
+    class Meta:
+        db_table = "company"

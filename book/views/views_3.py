@@ -237,3 +237,6 @@ class EmployeeDetail(DetailView):
 def student():
     print("ABC")
 
+def product_video(request):
+    print("In product video")
+    return HttpResponse("Video")
