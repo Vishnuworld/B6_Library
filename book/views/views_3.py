@@ -1,3 +1,4 @@
+from distutils.log import log
 import sre_constants
 import traceback
 
@@ -5,6 +6,7 @@ from django.http import HttpResponse
 from django.shortcuts import redirect, render
 
 from book.models import Book, Employee
+from django.contrib.auth import login, logout, authenticate
 
 # Create your views here.
 
@@ -240,3 +242,12 @@ def student():
 def product_video(request):
     print("In product video")
     return HttpResponse("Video")
+
+
+def user_login(request):
+    username = request.POST.get("username")
+    password = request.POST.get("password")
+    user = authenticate(username, password)
+    if user:
+        login(request, user)
+        return HttpResponse("Successfully Logged In..!")
