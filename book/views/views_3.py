@@ -251,3 +251,8 @@ def user_login(request):
     if user:
         login(request, user)
         return HttpResponse("Successfully Logged In..!")
+
+
+
+def func1():
+    print("in funtion 1")
