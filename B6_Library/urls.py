@@ -29,7 +29,9 @@ urlpatterns = [
     path('template_cbv/', views.CBVTemplateView.as_view(), name="template_cbv"),
     
 
-    path('', include(('book.urls'), namespace='book'))  
+    path('', include(('book.urls'), namespace='book')) ,
+    path('user-login/', views.user_login, name="user_login"),
+
 
     # path('emp-gcreate/', views.EmployeeCreate.as_view(), name='EmployeeCreate'),
     # path('emp-retr/', views.EmployeeRetrieve.as_view(), name='EmployeeRetrieve'),
