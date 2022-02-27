@@ -149,7 +149,7 @@ MEDIA_URL='/media/'
 #     "127.0.0.1",
 #     # ...
 # ]
-
+print(SECRET_KEY)
 
 # from django.utils import timezone
 

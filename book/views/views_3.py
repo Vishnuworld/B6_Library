@@ -241,9 +241,8 @@ def student():
     print("ABC")
 
 def product_video(request):
-    print("In product video")
+    print("In product video", "hello")
     return HttpResponse("Video")
-
 
 def user_login(request):
     username = request.POST.get("username")
