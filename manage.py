@@ -3,6 +3,7 @@
 import os
 import sys
 print("in manage.py")
+print("inside manage.py")
 
 
 def main():
